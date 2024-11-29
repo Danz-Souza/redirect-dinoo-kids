@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '4185751398371365');
+        fbq('track', 'PageView');
+        </script>
+        <noscript><img height="1" width="1" style="display:none"
+        src="https://www.facebook.com/tr?id=4185751398371365&ev=PageView&noscript=1"
+        />
+        </noscript>        
+    <link rel="stylesheet" type="text/css" href="./CSS/Style.css" media="screen" />         
+    <title>Redirect Dinoo Kids</title>
+</head>
+<body>
+    <div class="content">
+        <p class="TextSec">Você será redirecionado(a) para o contato ‎ <span id="countdown"></span> ‎ segundos.</p>
+        <script>
+
+            let seconds = 2;
+            function countdown() {
+                if (seconds > 0) {
+                    seconds--;
+                    document.getElementById('countdown').textContent = seconds;
+                } else {
+                    window.location.href = 'https://api.whatsapp.com/message/L3EPVEZDSCO4B1?autoload=1&app_absent=0 ';
+                }
+            }   
+            setInterval(countdown, 1000)
+
+        </script>
+    </div>    
+</body>
+</html>
